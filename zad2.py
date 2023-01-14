@@ -1,6 +1,6 @@
 import random
 
-def password_generator(min):
+def password_generator():
 
     digits = "0123456789"
     lowercase = "abcdefghijklmnopqrstuvwxyz"
@@ -8,9 +8,10 @@ def password_generator(min):
     special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
     pwd = ""
+    min = random.randint(8,64)
     for i in range(0, min):
         pwd += random.choice(digits) + random.choice(lowercase) + random.choice(uppercase) + random.choice(special)
 
     print(pwd[0:min])
 
-password_generator(8)
+password_generator()
