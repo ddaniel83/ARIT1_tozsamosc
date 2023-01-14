@@ -1,6 +1,5 @@
-import random
-
 def password_generator():
+    import random
 
     digits = "0123456789"
     lowercase = "abcdefghijklmnopqrstuvwxyz"
